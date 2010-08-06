@@ -1,13 +1,12 @@
 require 'formula'
 
-class Couchapp <Formula
-  url 'git://github.com/couchapp/couchapp.git'
-  homepage 'http://couchapp.org'
-  version '0.7.0'
-  @spec = {:tag => '0.7.0'}
+class Restkit <Formula
+  url 'git://github.com/benoitc/restkit.git'
+  homepage 'http://benoitc.github.com/restkit'
+  version '2.1.1'
+  @spec = {:tag => '2.1.1'}
 
   depends_on 'distribute'
-  depends_on 'restkit'
 
   def install
 
@@ -29,10 +28,10 @@ class Couchapp <Formula
           $ easy_install pip
           
         Then install latest released couchapp:
-          $ pip install couchapp
+          $ pip install restkit
 
         Or latest development:
-          $ pip install git+http://github.com/couchapp/couchapp.git#egg=Couchapp
+          $ pip install git+http://github.com/benoitc/benoitc.git#egg=restkit
 
       EOS
       exit 99
